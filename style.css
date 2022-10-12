@@ -247,3 +247,13 @@ transition: all .5s ease;
     }
 
 }
+.formulario{
+    text-align: left;
+width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 100px;
+}
+.formulario .seccionFormulario{
+padding-left: 5rem;
+padding-right: 5rem;
+}
