@@ -133,13 +133,19 @@ transition: all .5s ease;
         text-align: center;
         padding: 1rem;
     }
-
+.tarjetas{
+    align-items: center;
+}
 .flip-card {
     background-color: transparent;
     width: 280px;
     height: 300px;
-    border: 100px solid #f1f1f1;
+/*border: 100px solid #f1f1f1; */
     perspective: 1000px;
+    align-items: center;
+    margin-left: 35rem;
+    margin-top: 15rem;
+
   }
   
   .flip-card-inner {
