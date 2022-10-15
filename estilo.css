@@ -153,6 +153,10 @@
     background-color: aqua;
 }
 
+.container-card-img{
+    display: inline;
+}
+
 /* ASIDE */
 .aside {
     grid-area: aside;
