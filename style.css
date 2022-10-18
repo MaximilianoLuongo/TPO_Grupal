@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a{
+text-decoration: none;
+color: #fff;
+padding: 1.5rem;
+font-weight: bold;
+transition: all .5s ease;
+}
+
+.header{
+    background: black;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    align-items: center;
+
+}
+.header img{
+    width: 180px;
+    height: auto;
+    padding: 0%;
+}
+
+.nav ul li a:hover{
+    color: #000;
+    background: #fff;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(191, 195, 201);
+    align-content: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
+.glitch {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 2500ms infinite;
+}
+
+.glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    opacity: 0.8;
+}
+
+.glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    opacity: 0.8;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75),
+            0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+.footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem;
+    }
+    .bloqueFooter{
+        display: flex;
+        justify-content: space-around;
+    }
+    .tituloFooter{
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0.8rem;
+    }
+    .menuFooter{
+        list-style: none;
+        text-align: center;
+    }
+    .menuFooter a{
+        color: white;
+        text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    }
+    .creditoFinal{
+        text-align: center;
+        padding: 1rem;
+    }
+.tarjetas{
+    align-items: center;
+}
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 300px;
+/*border: 100px solid #f1f1f1; */
+    perspective: 1000px;
+    align-items: center;
+    margin-left: 35rem;
+    margin-top: 15rem;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 160%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  @media (min-width: 576px) {
+    .nav{
+      font-size: 24px;
+  }
+@media (min-width: 768px) {
+      .nav{
+        font-size: 24px;
+    
+      }
+
+    }
+  .subtitulos {
+    text-align: center;
+    font-size: medium;
+    margin-top: 100px;
+    text-decoration-color: chocolate;
+  }
+  }
+
+  
+/* PUNTO DE CORTE PARA TABLET */
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'header header header header'
+            'aside main main main'
+            'aside main main main'
+            'aside main main main'
+            'footer footer footer footer';
+        gap: 5px;
+    }
+
+
+    .formulario{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color:rgb(191, 195, 201);
+        margin-top: 10rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        line-height: 0.5rem;
+    
+    }
+    
+    label{
+    display: inline-block;
+    }
+    fieldset{
+        padding: 6rem;
+    }
+
+}
+
+/* PUNTO DE CORTE PARA DISPOSITIVOS MOVILES */
+@media only screen and (max-width: 450px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 1fr 15%;
+        grid-template-areas:
+            'header'
+            'main'
+            'aside'
+            'footer';
+        gap: 5px;
+    }
+
+
+    .formulario{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color:rgb(191, 195, 201);
+        margin-top: 10rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        line-height: 0.5rem;
+    
+    }
+    
+    label{
+    display: inline-block;
+    }
+    fieldset{
+        padding: 6rem;
+    }
+
+}
+.formulario{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(191, 195, 201);
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    line-height: 0.5rem;
+
+}
+
+label{
+display: inline-block;
+}
+fieldset{
+    padding: 6rem;
+}
+#videos{
+    margin: 12px;
+    padding: 10px;
+  text-align: center;
+}
+.fondo{
+background-color: #CDD9CF;
+}
+.imgLogo{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 5%;
+}
+
+.parrafos{
+    text-align: center;
+  margin-top: 100px;
+  max-width: 1024px;
+  margin: auto;
+  padding: 1px;
+}
