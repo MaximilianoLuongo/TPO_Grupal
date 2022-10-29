@@ -1,38 +1,70 @@
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif, 'Times New Roman', Times, serif;
 }
 
-.nav ul{
-    list-style: none;
-    display: flex;
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header header header header'
+        'aside main main main'
+        'aside main main main'
+        'aside main main main'
+        'footer footer footer footer';
+    gap: 5px;
 }
 
-.nav ul li a{
-text-decoration: none;
-color: #fff;
-padding: 1.5rem;
-font-weight: bold;
-transition: all .5s ease;
-}
-
-.header{
-    background: black;
+/* HEADER CON NAV */
+.header {
+    display: grid;
+    grid-area: header;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    padding-bottom: 1rem;
+}
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
     align-items: center;
-
-}
-.header img{
-    width: 180px;
+    width: 100%;
     height: auto;
-    padding: 0%;
+    margin: auto;
 }
 
-.nav ul li a:hover{
+.nav ul {
+    justify-content: end;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+
+.nav ul li a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.nav img {
+    width: 170px;
+    border-radius: 1em;
+    height: auto;
+}
+
+.nav ul li a:hover {
+    margin: 15px;
     color: #000;
     background: #fff;
 }
@@ -182,18 +214,18 @@ transition: all .5s ease;
   }
   @media (min-width: 576px) {
     .nav{
-      font-size: 24px;
+      font-size: 22px;
   }
 @media (min-width: 768px) {
       .nav{
-        font-size: 24px;
+        font-size: 18px;
     
       }
 
     }
   .subtitulos {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     margin-top: 100px;
   }
   }
