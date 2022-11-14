@@ -44,7 +44,7 @@ document.getElementById("footer").innerHTML = `
         </ul>
     </div>
     <div class="creditoFinal"> Desarrollado por Equipo CaC </div>
-    <a href="suscripcion" class="btn btn-primary" role="button">Suscribíte</a>
+    <a href="suscribite.html" class="btn btn-primary" role="button">Suscribíte</a>
     </form>
 </footer>
 
