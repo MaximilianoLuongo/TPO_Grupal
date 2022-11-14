@@ -5,7 +5,7 @@ document.getElementById("header").innerHTML = `
             <nav class="nav">
                 <img src="./imagenes/logo2.png" alt="Logo pelis">
                 <ul>
-                    <li><a href="index2.html"> Home </a></li>
+                    <li><a href="index.html"> Home </a></li>
                     <li><a href="peliculas.html"> Top 10 </a></li>
                     <li><a href="proximamente.html"> Próximamente </a></li>
                     <li><a href="suscribite.html"> Suscribite </a></li> <!-- Formulario -->
@@ -21,7 +21,7 @@ document.getElementById("footer").innerHTML = `
         <div>
             <h4 class="tituloFooter">Nuestro sitio</h4>
             <ul class="menuFooter">
-                <li><a href="index2.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="peliculas.html">Top 10</a></li>
                 <li><a href="proximamente.html">Próximamente</a></li>
                 <li><a href="suscribite.html">Suscribite</a></li>
@@ -30,7 +30,7 @@ document.getElementById("footer").innerHTML = `
         <div>
             <h4 class="tituloFooter">Estamos con vos</h4>
             <ul class="menuFooter">
-                <li><a href="index2.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="peliculas.html">Top10</a></li>
                 <li><a href="proximamente.html">Próximamente</a></li>
                 <li><a href="suscribite.html">Suscribite</a></li>
@@ -43,7 +43,7 @@ document.getElementById("footer").innerHTML = `
             <li><a href="https://www.filmin.es/catalogo/pais/argentina">Filmin</a></li>
         </ul>
     </div>
-    <div class="creditoFinal"> Desarrollado por Richard Moreno </div>
+    <div class="creditoFinal"> Desarrollado por Equipo CaC </div>
     <a href="suscripcion" class="btn btn-primary" role="button">Suscribíte</a>
     </form>
 </footer>
