@@ -91,6 +91,7 @@
         0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 
     animation: glitch 2500ms infinite;
+    text-align: center;
 }
 
 .glitch span {
