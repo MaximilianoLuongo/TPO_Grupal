@@ -28,15 +28,6 @@ document.getElementById("footer").innerHTML = `
             </ul>
         </div>
         <div>
-            <h4 class="tituloFooter">Estamos con vos</h4>
-            <ul class="menuFooter">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="peliculas.html">Top10</a></li>
-                <li><a href="proximamente.html">Próximamente</a></li>
-                <li><a href="suscribite.html">Suscribite</a></li>
-            </ul>
-        </div>
-    <div>
         <h4 class="tituloFooter">Enlaces relacionados</h4>
         <ul class="menuFooter">
             <li><a href="https://decine21.com/listas-de-cine/lista/las-mejores-peliculas-argentinas-100088">DeCine21</a></li>
