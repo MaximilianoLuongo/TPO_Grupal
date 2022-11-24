@@ -334,7 +334,7 @@ img {
     color: #000;
     background: #fff;
 }
-
+/*
 @keyframes glitch {
     0% {
         text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
@@ -399,7 +399,7 @@ img {
     background-color: transparent;
     width: 280px;
     height: 300px;
-    /*border: 100px solid #f1f1f1; */
+    /*border: 100px solid #f1f1f1; 
     perspective: 1000px;
     align-items: center;
     margin-left: 35rem;
