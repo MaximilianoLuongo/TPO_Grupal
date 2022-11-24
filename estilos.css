@@ -303,7 +303,7 @@ img {
     color: #000;
     background: #fff;
 }
-/*
+
 @keyframes glitch {
     0% {
         text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
@@ -368,12 +368,12 @@ img {
     background-color: transparent;
     width: 280px;
     height: 300px;
-    /*border: 100px solid #f1f1f1; 
+    /*border: 100px solid #f1f1f1; */
     perspective: 1000px;
     align-items: center;
-    margin-left: 35rem;
-    margin-top: 15rem;
-
+    /* margin-left: 35rem;
+    margin-top: 15rem; */
+    margin: 3rem 0;
 }
 
 .flip-card-inner {
@@ -455,15 +455,10 @@ img {
     }
 
     .formulario {
-        /*    display: flex; */
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-        background-color: rgb(191, 195, 201);
         margin-top: 10rem;
-        margin-left: 20rem;
-        margin-right: 20rem;
         line-height: 0.5rem;
-
     }
 
     .formulario legend {
@@ -475,9 +470,6 @@ img {
         display: inline-block;
     }
 
-    fieldset {
-        padding: 6rem;
-    }
 
     .footer {
         grid-area: footer;
@@ -486,8 +478,26 @@ img {
         padding: 2rem;
         height: 500px;
     }
+    .flex-container {
+        width: 100%;
     
-
+        }
+    .videos {
+        margin: 0;
+        padding: 0;
+    }
+    .videos iframe {
+        width: 100%;
+    }
+    .flip-card {
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .flip-card-inner {
+        width: 100%;
+    }
 }
 
 /* PUNTO DE CORTE PARA DISPOSITIVOS MOVILES */
@@ -522,11 +532,6 @@ img {
 
     label {
         display: inline-block;
-    }
-
-    fieldset {
-        padding: 8rem;
-        font-size: 2.8rem;
     }
 
     .nav {
@@ -580,25 +585,37 @@ img {
 .formulario {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(191, 195, 201);
     margin-top: 10rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
     line-height: 0.5rem;
     font-size: 1.3rem;
-
+    margin: 0 30%;
 }
+
+@media only screen and (max-width: 820px) {
+    .formulario { 
+        margin: 0;
+    }
+}
+
 
 fieldset {
-    padding: 6rem;
+    padding: 6rem 0;
+    background-color: rgb(191, 195, 201);
 }
 
-#videos {
-    margin: 12px;
-    padding: 10px;
-    text-align: center;
+.videos iframe {
+    width: 560px;
 }
+.estrenos {
+    display: flex;
+    justify-content: space-around;
 
+}
+@media only screen and (max-width: 820px) {
+    .estrenos { 
+        display: block;
+    }
+}
 .fondo {
     background-color: #CDD9CF;
 }
